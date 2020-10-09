@@ -18,7 +18,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBr-vR-jKY">
                                 <rect key="frame" x="103.66666666666669" y="374.66666666666669" width="168" height="63"/>
-                                <color key="backgroundColor" red="0.4823398110837942" green="0.82637406295575522" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.67450980392156867" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="3Vf-YG-xry"/>
                                     <constraint firstAttribute="width" constant="168" id="CcV-Wk-lVi"/>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="-527.20000000000005" y="316.19190404797604"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="nQg-ck-gf8">
             <objects>
-                <tableViewController id="4Yh-gk-1k9" sceneMemberID="viewController">
+                <tableViewController id="4Yh-gk-1k9" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="B4M-cL-Mif">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,14 @@
                             <outlet property="delegate" destination="4Yh-gk-1k9" id="O78-tn-O3b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="uAh-lb-2pz"/>
+                    <navigationItem key="navigationItem" title="Home" id="uAh-lb-2pz">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="u1Q-uF-Hm2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onLogout:" destination="4Yh-gk-1k9" id="Exf-S4-iSn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDn-bh-WUy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,6 +90,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kgb-pP-aij">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.67450980390000004" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="4Yh-gk-1k9" kind="relationship" relationship="rootViewController" id="GXT-kO-GEd"/>
