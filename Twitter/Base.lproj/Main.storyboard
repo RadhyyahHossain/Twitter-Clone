@@ -40,7 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="t4N-ia-Pfl"/>
                     </view>
                     <connections>
-                        <segue destination="ule-pg-Ofs" kind="presentation" identifier="loginToHome" id="mpC-dG-dzT"/>
+                        <segue destination="ule-pg-Ofs" kind="presentation" identifier="loginToHome" id="SHh-2i-U8s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6C1-qk-SAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
